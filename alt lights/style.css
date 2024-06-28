@@ -1,0 +1,822 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	width: 100%;
+	height: 100svh;
+}
+.header{
+	width: 100%;
+	height: 17svh;
+	background-color: black;
+	opacity: 0.5;
+	display: flex;
+	position: relative;
+	z-index: 50;
+}
+.logo{
+	height: 100%;
+	width: 250px;
+	/* background-color: transparent; */
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.img{
+	position: absolute;
+	right: 0;
+	height: 40%;
+	width: 200px;
+	/* background-color: transparent; */
+	background-image: url(https://altlights.com/static/media/Logo_Image.30031c07f18c8695da51.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.img:hover{
+	cursor: pointer;
+}
+.navbar{
+	height: 100%;
+	width: 40%;
+	display: flex;
+}
+.nav{
+	height: 100%;
+	width: 250px;
+	text-align: center;
+	align-content: center;
+	color: white;
+	font-family: 'roboto',sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	position: relative;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.strip{
+	position: absolute;
+	width: 100%;
+	height: 7px;
+	bottom: 0;
+}
+.nav:hover .strip{
+	background-color: red;
+}
+.menu{
+	height: 100%;
+	width: 8.5%;
+	position: absolute;
+	right: 0;
+	display: none;
+	text-align: center;
+	align-content: center;
+	font-size: 30px;
+}
+.options{
+	font-size: 20px;
+	height: fit-content;
+	width: fit-content;
+	position: absolute;
+	right: 25px;
+	color: white;
+	font-family: 'roboto',sans-serif;
+	display: none;
+	top: 60%;
+	z-index: 100;
+}
+.op{
+	padding: 20px;
+	border: 2px solid black;
+	background-color: grey;
+}
+.menu:hover .options{
+	display: block;
+}
+.op:hover{
+	color: black;
+	background-color: white;
+}
+@media screen and ((min-width:900px) and (max-width:1250px)){
+	.navbar{
+		display: none;
+	}
+	.menu{
+		display: block;
+	}
+}
+@media screen and (max-width:900px){
+	.header{
+		height: 15svh;
+	}
+	.navbar{
+		display: none;
+	}
+	.menu{
+		display: block;
+	}
+}
+@media screen and (max-width: 500px){
+	.img{
+		left: 0;
+	}
+}
+
+
+/* after header */
+
+.content1{
+	width: 100%;
+	height: 100svh;
+	/* background-color: pink; */
+	background-image: url(https://i0.wp.com/tj2lighting.com/wp-content/uploads/2024/01/spacejoy-2kn-6S2y9tQ-unsplash-1-1.jpg);
+	background-size: 100% 100%;
+	position: relative;
+	top: -17svh;
+}
+.quote1{
+	position: absolute;
+	top: 150px;
+	left: 300px;
+	font-size: 60px;
+	color: white;
+	font-family: 'roboto',sans-serif;
+}
+#sub_quote{
+	font-size: 30px;
+}
+@media screen and (min-width:1400px){
+	.quote1{
+		left: 300px;
+		top: 150;
+		font-size: 60px;
+	}
+}
+@media screen and (max-width:1300px){
+	.quote1{
+		left: 410px;
+		top: 165px;
+		font-size: 40px;
+	}
+	#sub_quote{
+		font-size: 15px;
+	}
+}
+@media screen and (min-width:1100px) and (max-width:1400px){
+	.content1{
+		width: 100%;
+		height: 95svh;
+		/* position: absolute; */
+	}
+}
+@media screen and (min-width:1000px) and (max-width:1100px){
+	.content1{
+		width: 100%;
+		height: 85svh;
+		/* position: absolute; */
+	}
+	.quote1{
+		top: 20svh;
+		text-align: center;
+		align-content: center;
+	}
+}
+@media screen and (min-width:900px) and (max-width:1000px){
+	.content1{
+		width: 100%;
+		height: 75svh;
+		/* position: absolute; */
+	}
+	.quote1{
+		top: 20svh;
+		text-align: center;
+		align-content: center;
+		left: 280px;
+	}
+}
+@media screen and (min-width:800px) and (max-width:900px){
+	.content1{
+		width: 100%;
+		height: 65svh;
+		/* position: absolute; */
+	}
+	.quote1{
+		top: 20svh;
+		text-align: center;
+		align-content: center;
+		left: 200px;
+		font-size: 30px;
+	}
+}
+@media screen and (min-width:700px) and (max-width:800px){
+	.content1{
+		width: 100%;
+		height: 60svh;
+		/* position: absolute; */
+	}
+	.quote1{
+		top: 20svh;
+		text-align: center;
+		align-content: center;
+		left: 200px;
+		font-size: 30px;
+	}
+}
+@media screen and (min-width:600px) and (max-width:700px){
+	.content1{
+		width: 100%;
+		height: 55svh;
+		/* position: absolute; */
+	}
+	.quote1{
+		top: 20svh;
+		/* text-align: center;
+		align-content: center; */
+		left: 150px;
+		font-size: 25px;
+	}
+}
+
+@media screen and (min-width:500px) and (max-width:600px){
+	.content1{
+		width: 100%;
+		height: 50svh;
+		/* position: absolute; */
+	}
+	.quote1{
+		top: 25svh;
+		/* text-align: center;
+		align-content: center; */
+		left: 0px;
+		font-size: 20px;
+	}
+}
+/* after content1 i.e background image */
+
+.content2{
+	width: 100%;
+	height: 100svh;
+	/* display: flex; */
+	text-align: center;
+	justify-content: center;
+	position: relative;
+	color: #C30000;
+	font-size: 35px;
+	/* top: 70px; */
+	top: -7svh;
+	font-family: 'roboto',sans-serif;
+	font-weight: 600;
+}
+
+.buttons{
+	width: 100%;
+	height: 50px;
+	/* background-color: black; */
+	position: absolute;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 20px;
+	top: 80px;
+	/* flex-wrap: wrap; */
+}
+.btn{
+	/* position: absolute; */
+	width: 150px;
+	height: 50px;
+	border-radius: 50px;
+	border: 1px solid #C30000;
+	color: black;
+	text-align: center;
+	align-content: center;
+	/* margin: 80px; */
+	font-size: 18px;
+}
+.btn:hover{
+	background-color: #C30000;
+	color: white;
+	cursor: pointer;
+}
+.matter1{
+	width: 80%;
+	height: 30px;
+	position: absolute;
+	font-size: 18px;
+	line-height: 20px;
+	top: 190px;
+	color: #868383;
+	font-weight: 200;
+	text-align: center;
+	left: 10%;
+}
+.sliding_products{
+	width: 100%;
+	height: 45%;
+	/* background-color: black; */
+	position: relative;
+	top: 35.3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .5s ease;
+}
+.product1{
+	height: 100%;
+	width: 18%;
+	background-color: #DCDCDC;
+	position: absolute;
+	left: 12%;
+	border-radius: 15px;
+	background-image: url(https://www.altlights.com/assets/img/About/Residential/Cards_Residential_Shimmer.png);
+	background-size: 100% 100%;
+	transition: transform .2s;
+	opacity: 0.5;
+}
+.product2{
+	height: 100%;
+	width: 18%;
+	background-color: #DCDCDC;
+	position: absolute;
+	/* left: 200px; */
+	border-radius: 15px;
+	background-image: url(https://www.altlights.com/assets/img/About/Residential/Cards_Residential_Sway.png);
+	background-size: 100% 100%;
+	/* opacity: 0.5; */
+}
+.product3{
+	height: 100%;
+	width: 18%;
+	background-color: #DCDCDC;
+	position: absolute;
+	right: 12%;
+	border-radius: 15px;
+	background-image: url(https://www.altlights.com/assets/img/About/Residential/Cards_Residential_ERCO.png);
+	background-size: 100% 100%;
+	transition: transform .2s;
+	opacity: 0.5;
+}
+.pro_btn1{
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	border: 2px solid black;
+	position: absolute;
+	align-content: center;
+	text-align: center;
+	left: 34%;
+	transition: transform .2s;
+	font-size: 30px;
+}
+.pro_btn2{
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	border: 2px solid black;
+	position: absolute;
+	right: 34%;
+	align-content: center;
+	text-align: center;
+	font-size: 30px;
+}
+.pro_btn1:hover{
+	background-color: #C30000;
+	color: white;
+	border: none;
+}
+.pro_btn2:hover{
+	background-color: #C30000;
+	color: white;
+	border: none;
+}
+.product2:hover{
+	transform: scale(1.1);
+}
+/* .pro_btn1:hover .product1{
+	transform: scale(1.1);
+}
+.pro_btn2:hover .product3{
+	transform: scale(1.1);
+} */
+/* @media screen and ((min-width:1100px) and (max-width:1400)){
+	.buttons{
+		width: 50%;
+	}
+}*/
+@media screen and (min-width:676px) and (max-width:900px){
+	.matter1{
+		top: 165px;
+		width: 90%;
+		left: 5%;
+	}
+	/* .btn{
+		width: 120px;
+		height: 40px;
+		border-radius: 50px;
+		border: 1px solid #C30000;
+		color: black;
+		text-align: center;
+		align-content: center;
+		margin: 80px;
+		font-size: 16px;
+	} */
+}
+@media screen and (max-width:675.5px){
+	.buttons{
+		flex-wrap: wrap;
+		top: 100px;
+	}
+	.btn{
+		/* width: 120px;
+		height: 40px; */
+		border-radius: 50px;
+		border: 1px solid #C30000;
+		color: black;
+		text-align: center;
+		align-content: center;
+		margin: 10px;
+		font-size: 16px;
+	}
+	.matter1{
+		top: 245px;
+		width: 100%;
+		left: 0;
+	}
+}
+@media screen and (max-width:583px){
+	.buttons{
+		flex-wrap: wrap;
+		top: 100px;
+	}
+	.btn{
+		margin: 10px;
+	}
+	.matter1{
+		top: 245px;
+		width: 100%;
+		left: 0;
+	}
+}
+@media screen and (min-width:1100px) and (max-width:1300px){
+	.matter1{
+		font-size: 19px;
+		top: 22%;
+	}
+	/* .btn{
+		width: 120px;
+		height: 40px;
+		border-radius: 50px;
+		border: 1px solid #C30000;
+		color: black;
+		text-align: center;
+		align-content: center;
+		margin: 80px;
+		font-size: 16px;
+	} */
+}
+@media screen and (min-width:900px) and (max-width:1100px){
+	.matter1{
+		font-size: 18px;
+		top: 20%;
+	}
+	/* .btn{
+		width: 120px;
+		height: 40px;
+		border-radius: 50px;
+		border: 1px solid #C30000;
+		color: black;
+		text-align: center;
+		align-content: center;
+		margin: 80px;
+		font-size: 16px;
+	} */
+}
+@media screen and (min-width:1300px){
+	.matter1{
+		font-size: 20px;
+		top: 19%;
+	}
+}
+@media screen and (min-width:1450px){
+	.sliding_products{
+		top: 250px;
+	}
+	.matter1{
+		top: 170px;
+	}
+
+}
+@media screen and (min-width:1350px) and (max-width:1450px){
+	.sliding_products{
+		height: 40%;
+		top: 260px;
+	}
+	.matter1{
+		top: 170px;
+	}
+}
+@media screen and (min-width:1250px) and (max-width:1350px){
+	.sliding_products{
+		height: 35%;
+		top: 250px;
+	}
+	.matter1{
+		top: 170px;
+	}
+}
+@media screen and (min-width:1075px) and (max-width:1250px){
+	.sliding_products{
+		height: 32%;
+		top: 230px;
+	}.matter1{
+		top: 160px;
+	}
+}
+@media screen and (min-width:732px) and (max-width:1075px){
+	.product1{
+		display: none;
+	}
+	.matter1{
+		top: 170px;
+	}
+	.product3{
+		display: none;
+	}
+	.sliding_products{
+		height: 43%;
+		width: 100%;
+		top: 250px;
+	}
+	.product2{
+		width: 350px;
+		height: 115%;
+	}
+	.pro_btn2{
+		right: 15%;
+		height: 50px;
+		width: 50px;
+		font-size: 20px;
+	}
+	.pro_btn1{
+		left: 15%;
+		height: 50px;
+		width: 50px;
+		font-size: 25px;
+	}
+
+}
+@media screen and (min-width:600px) and (max-width:732px){
+	.product1{
+		display: none;
+	}
+	.product3{
+		display: none;
+	}
+	.sliding_products{
+		height: 43%;
+		width: 100%;
+		top: 300px;
+	}
+	.product2{
+		top: -50px;
+		width: 325px;
+		height: 110%;
+	}
+	.pro_btn2{
+		right: 4%;
+		height: 40px;
+		width: 40px;
+		font-size: 20px;
+		top: 35%;
+	}
+	.pro_btn1{
+		left: 4%;
+		height: 40px;
+		width: 40px;
+		font-size: 20px;
+		top: 35%;
+	}
+}
+@media screen and (min-width:500px) and (max-width:600px){
+	.product1{
+		display: none;
+	}
+	.product3{
+		display: none;
+	}
+	.sliding_products{
+		height: 43%;
+		width: 100%;
+		top: 340px;
+	}
+	.product2{
+		top: -50px;
+		width: 325px;
+		height: 110%;
+	}
+	.pro_btn2{
+		right: 4%;
+		height: 40px;
+		width: 40px;
+		font-size: 20px;
+		top: 35%;
+	}
+	.pro_btn1{
+		left: 4%;
+		height: 40px;
+		width: 40px;
+		font-size: 20px;
+		top: 35%;
+	}
+}
+
+/* our clients content */
+
+.our_clients{
+	width: 100%;
+	height: 172svh;
+	position: relative;
+	/* border: 5px solid pink; */
+	display: flex;
+	/* flex-direction: column; */
+	/* flex-wrap: wrap; */
+	justify-content: center;
+}
+span{
+	color: black;
+	/* text-align: center; */
+}
+.client{
+	width: 100%;
+	height: fit-content;
+	text-align: center;
+	font-size: 36px;
+	position: absolute;
+	top: 66px;
+	color: #C30000;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 600;
+}
+.images{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 85%;
+	height: 100svh;
+	position: absolute;
+	top: 180px;
+	/* align-items: center; */
+}
+.client_img{
+	/* top: 150px; */
+	position: relative;
+	margin: 15px;
+	padding: 15px;
+	height: 280px;
+	width: 420px;
+	background-size: 100% 100%;
+	align-content: center;
+	background-repeat: no-repeat;
+	padding: 15px;
+	border: 2px solid black;
+}
+
+/* after the clients content */
+.story_and_explore_collections{
+	height: 100svh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	background-color: black;
+}
+.story_values{
+	width: 95%;
+	height: 65svh;
+	position: absolute;
+	background-color: white;
+	top: 20svh;
+	border-radius: 25px;
+	display: flex;
+	justify-content: center;
+}
+.story_nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 95%;
+	height: 60px;
+	position: absolute;
+	top: 25px;
+	border-radius: 30px;
+	background-color: #D5D5D5;
+	overflow: hidden;
+	cursor: pointer;
+}
+.nav_s1,
+.nav_s2,
+.nav_s3,
+.nav_s4{
+	align-content: center;
+	width: 338.4375px;
+	height: 85%;
+	/* background-color: #C30000; */
+	background-color: none;
+	border-radius: 30px;
+	text-align: center;
+	font-size: 20px;
+	z-index: 20;
+	transition: all 1s;
+	cursor: pointer;
+	/* align-items: center; */
+}
+.nav_s1::before{
+	content: "";
+	position: absolute;
+	height: 80%;
+	background-color: #C30000;
+	top: 10%;
+	left: -338.4375px;
+	width: 338.4375px;
+	border-radius: 30px;
+	z-index: -20;
+	transition: all 1s;
+	overflow: hidden;
+}
+.nav_s2::before{
+	content: "";
+	position: absolute;
+	height: 80%;
+	background-color: #C30000;
+	top: 10%;
+	left: -338.4375px;
+	width: 338.4375px;
+	border-radius: 30px;
+	z-index: -20;
+	overflow: hidden;
+	transition: all 1s;
+}
+.nav_s3::before{
+	content: "";
+	position: absolute;
+	height: 80%;
+	background-color: #C30000;
+	top: 10%;
+	left: -338.4375px;
+	width: 338.4375px;
+	border-radius: 30px;
+	z-index: -20;
+	overflow: hidden;
+	transition: all 1s;
+}
+.nav_s4::before{
+	content: "";
+	position: absolute;
+	height: 80%;
+	background-color: #C30000;
+	top: 10%;
+	left: -338.4375px;
+	width: 338.4375px;
+	border-radius: 30px;
+	z-index: -20;
+	overflow: hidden;
+	transition: all 1s;
+}
+.nav_s1:hover::before{
+	left: 10px;
+}
+.nav_s2:hover::before{
+	left: 338.4375px;
+}
+.nav_s3:hover::before{
+	left: 676.875px;
+}
+.nav_s4:hover::before{
+	left: 1015.3125px;
+}
+.matter_heading{
+	width: 95%;
+	height: fit-content;
+	position: absolute;
+	top: 40%;
+}
+#h1{
+	color: #C30000;
+	font-size: 25px;
+	font-family: 'roboto',sans-serif;
+	font-weight: 700;
+}
+#p1{
+	font-family: 'roboto',sans-serif;
+	font-size: 18px;
+}
+#p2{
+	font-family: 'roboto',sans-serif;
+	font-size: 18px;
+}
+#p3{
+	font-family: 'roboto',sans-serif;
+	font-size: 18px;
+}
