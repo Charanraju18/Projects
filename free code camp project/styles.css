@@ -1,0 +1,66 @@
+body{
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	color: white;
+	background-color: #555595;
+}label{
+	display: block;
+	margin: 0.5rem 0;
+}
+form {
+	width: 60vw;
+	max-width: 500px;
+	min-width: 300px;
+	margin: 0 auto;
+	padding-bottom: 2em;
+}
+h1, p {
+	margin: 1em auto;
+	text-align: center;
+	color: black;
+  }
+  option{
+	font-size: 30px;
+  }
+  input,
+  textarea{
+	width: 100%;
+	margin: 10px 0 0 0;
+	min-width: 2em;
+  }
+  textarea{
+	height: 100px;
+	max-width: 500px;
+	min-width: 300px;
+	max-height: 200px;
+  }
+  select{
+	width: 100%;
+  }
+  .inline {
+	width: unset;
+	margin: 0 0.5em 0 0;
+	vertical-align: middle;
+	display: inline;
+  }
+  .checkbox_inline {
+	width: unset;
+	margin: 0 0.5em 0 0;
+	/* vertical-align: middle; */
+	display: inline;
+  }
+  #submit{
+	width: 100%;
+	margin: 10px 0 0 0;
+	min-width: 2em;
+	height: 30px;
+	background-color: #37AF65;
+	color: white;
+  }
+  fieldset{
+	max-width: 500px;
+	min-width: 300px;
+	margin: auto;
+	background-color: #282845;
+  }

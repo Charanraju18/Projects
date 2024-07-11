@@ -682,6 +682,18 @@ span{
 	padding: 15px;
 	border: 2px solid black;
 }
+@media screen and (max-width:920px){
+	.client_img{
+		height: 200px;
+		width: 300px;
+	}
+}
+@media screen and (min-width:921px) and (max-width:1200px){
+	.client_img{
+		height: 210px;
+		width: 315px;
+	}
+}
 
 /* after the clients content */
 .story_and_explore_collections{
@@ -712,7 +724,7 @@ span{
 	top: 25px;
 	border-radius: 30px;
 	background-color: #D5D5D5;
-	overflow: hidden;
+	/* overflow: hidden; */
 	cursor: pointer;
 }
 .nav_s1,
@@ -732,7 +744,17 @@ span{
 	cursor: pointer;
 	/* align-items: center; */
 }
-.nav_s1::before{
+.overlap{
+	width: 338.4375px;
+	height: 80%;
+	background-color: #C30000;
+	z-index: 19;
+	top: 5px;
+	position: absolute;
+	border-radius: 30px;
+	left: -338.4375px;
+}
+/* .nav_s1::before{
 	content: "";
 	position: absolute;
 	height: 80%;
@@ -795,6 +817,12 @@ span{
 }
 .nav_s4:hover::before{
 	left: 1015.3125px;
+} */
+.nav_s1:hover,
+.nav_s2:hover,
+.nav_s3:hover,
+.nav_s4:hover{
+	background-color:#C30000;
 }
 .matter_heading{
 	width: 95%;
@@ -819,4 +847,142 @@ span{
 #p3{
 	font-family: 'roboto',sans-serif;
 	font-size: 18px;
+}
+@media screen and (min-width:974.5px) and (max-width:1100px){
+	.story_values{
+		height: 70svh;
+	}
+}
+@media screen and (min-width:868px) and (max-width:974.5px){
+	.story_values{
+		height: 75svh;
+		top: 18svh;
+	}
+	.nav_disapear{
+		display: none;
+	}
+}
+@media screen and (min-width:650px) and (max-width:868px){
+	.story_values{
+		height: 77svh;
+		top: 16svh;
+	}
+	.nav_disapear{
+		display: none;
+	}
+	.matter_heading{
+		top: 35%;
+	}
+}
+/* @media screen and (min-width:600px) and (max-width:700px){
+	.story_values{
+		height: 70svh;
+		top: 16svh;
+	}
+	.nav_disapear{
+		display: none;
+	}
+	.matter_heading{
+		top: 28%;
+	}
+} */
+@media screen and (min-width:500px) and (max-width:650px){
+	.story_values{
+		height: 80svh;
+		top: 15svh;
+	}
+	.nav_disapear{
+		display: none;
+	}
+	.matter_heading{
+		top: 26%;
+	}
+}
+
+/* explore collection content */
+
+.collection{
+	width: 100%;
+	height: 90svh;
+	position: relative;
+	display: flex;
+}
+.book{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	/* border: 1px solid black; */
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.book_img{
+	width: 400px;
+	height: 400px;
+	background-image: url(https://www.altlights.com/assets/img/3D_Catalogs/OutDoor_Compressed/1.png);
+	background-size: 100% 100%;
+	/* border: 2px solid black; */
+}
+.explore_collection{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	/* border: 1px solid black; */
+	right: 0;
+	/* display: flex;
+	justify-content: flex-start;
+	align-items: center; */
+	align-content: center;
+}
+
+.content3{
+	color: #C30000;
+	font-size: 35px;
+	font-family: 'roboto',sans-serif;
+	font-weight: 700;
+}
+#collection_p{
+	height: fit-content;
+	width: 75%;
+	font-family: 'roboto',sans-serif;
+	font-size: 18px;
+}
+.cl_btns{
+	width: 75%;
+	height: 50px;
+	/* background-color: #C30000; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.exp_btn{
+	height: 100%;
+	width: 125px;
+	background-color: black;
+	color: white;
+	/* border: 2px solid black; */
+	align-content: center;
+	text-align: center;
+	border-radius: 50px;
+	font-size: 22px;
+	font-family: 'roboto',sans-serif;
+	cursor: pointer;
+}
+.exp_btn:hover{
+	background-color: #C30000;
+	color: white;
+}
+.download{
+	height: 60px;
+	width: 225px;
+	border: 2px solid #C30000;
+	color: black;
+	/* background-color: black; */
+	text-align: center;
+	align-content: center;
+	font-family: 'roboto',sans-serif;
+	font-size: 25px;
+	border-radius: 25px;
+	font-weight: 700;
 }
