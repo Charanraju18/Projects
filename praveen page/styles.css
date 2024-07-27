@@ -4,7 +4,7 @@
 	font-family: 'Roboto';
 }
 body{
-	width: 100%;
+	min-width: 320px;
 	height: 100svh;
 	display: flex;
 	flex-direction: column;
@@ -56,6 +56,7 @@ body{
 	text-align: center;
 	width: 80%;
 	margin: auto;
+	font-size: 1.3vmax;
 }
 .btn{
 	width: 100%;
@@ -67,9 +68,12 @@ body{
 .cont_btn{
 	width: fit-content;
 	height: fit-content;
-	padding: 15px 37.5px;
+	padding: 1% 37.5px;
 	background-color: #2246C3;
 	border-radius: 50px;
 	color: white;
-	font-size: 24px;
+	font-size: 1.5vmax;
+}
+@media screen {
+
 }
